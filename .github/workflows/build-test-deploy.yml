@@ -49,7 +49,7 @@ jobs:
           node-version: '18.x'
           
       - name: configure github pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5.0.0
         with:
           static_site_generator: next
           
@@ -58,7 +58,7 @@ jobs:
       - run: npm run build
       
       - name: upload artifacts
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v4.0.5
         with:
           path: "./out"
           
